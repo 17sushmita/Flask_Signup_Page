@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Registeration</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}"/>
+
+    {% block head %}{% endblock %}
+    
+</head>
+
+<body>
+    <div class="bg">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container fluid">
+            <div class="navbar-header">
+                <img class="logo" src="{{url_for('static', filename='Freshlybuilt-Logo.png')}}">
+                <bold><a class="navbar-brand" id="website_name" href="https://freshlybuilt.com/">Freshlybuilt.com</a></bold>
+              </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <button type="button" href="index.html" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signUp_modal">Sign Up</button>
+                </li>
+            </ul>
+            </div>
+          </nav>
+ 
+        
+    {% block body %}{% endblock %}
+    </div>
+</body>
+</html>

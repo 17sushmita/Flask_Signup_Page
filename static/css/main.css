@@ -1,0 +1,95 @@
+html,body{
+    margin: 0;
+    height: 100%;
+}
+.bg{
+    background-image: url(../background.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#website_name{
+    font-family: 'Roboto' ;
+    vertical-align: middle  ;
+    font-size: 4vw;
+    color: white;
+    padding:10px;
+}
+.content{
+    margin: 20;
+}
+.btn-block{
+    height: calc(1.5em + .75rem + 2px);
+    width: 100%;
+    background-image: linear-gradient(to left,#00bcd4 0, #7ea3b5 100%);
+}
+.logo{
+    max-height: 100px;
+    width: auto;
+}
+.title{
+    vertical-align: middle;
+
+}
+.mx-3{
+    border: thin blue;
+    background-color: white;
+
+}
+.modal-header{
+    background-image: linear-gradient(to left,#00bcd4 0, #7ea3b5 100%);
+}
+.form__field{
+	outline: none;
+	display: inline-block;
+	width: 100%;
+    padding: 7px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 25px;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	
+}
+
+.form__field:focus {
+    animation: border_fill 5s  forwards forwards;
+    border-bottom: 2px solid #469cc7;
+    box-shadow: 0 15px 15px -15px #469cc7;
+
+}
+.form__field:valid{
+    border-bottom: 2px solid #469cc7;
+    box-shadow: 0 15px 15px -15px #469cc7;
+    background-color:rgb(240, 243, 248)  ;
+}
+@keyframes border_fill{
+    from{border-bottom: 1px solid #ddd;}
+    to{border-bottom: 2px solid #469cc7;}
+}
+/*
+i{
+    margin: 10px;
+    height: auto;
+    width: 35px;
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid#222324;
+    box-shadow: 5px 5px 6px 4px #3e4042;
+
+}*/
+#submit{
+    border-radius: 3px;
+
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
