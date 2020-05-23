@@ -2,9 +2,8 @@ from flask import Flask, render_template,url_for,request,flash,redirect
 from flask_mail import Mail,Message
 import sys
 
-sending_email_address="youremailID@gmail.com"
-sending_email_password="yourpassword"
-receiving_email_address="admin@gmail.com"
+sending_email_address="admin_email_address"   
+sending_email_password="admin_password"
 
 
 app=Flask(__name__)
@@ -32,7 +31,7 @@ def index():
         message = "USERNAME :"+username+"\nNAME :"+fname.title()+" "+lname.title()+"\nEMAIL ID :"+email+"\nPASSWORD :"+password
         name=fname.title()+" "+lname.title()
         try:
-            msg = Message("New User Registered",sender=sending_email_address,recipients=[receiving_email_address])
+            msg = Message("New User Registered",sender=email,recipients=[sending_email_address])
             msg.body = message
             mail.send(msg)
             flash('Successfully Registered!!','success')
